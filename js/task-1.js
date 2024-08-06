@@ -1,12 +1,16 @@
 "use strict"
+
 function slugify(title) {
-    const wordsArray = title.toLowerCase().split(' ');
-    const slug = wordsArray.join('-');
+
+    const newWord = title.toLowerCase().split(" ");
+
+
+    const slug = newWord.join('-')
+
     return slug;
-   
-   
 
 }
+
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
 console.log(slugify("English for developer")); // "english-for-developer"
 console.log(slugify("Ten secrets of JavaScript")); // "ten-secrets-of-javascript"
